@@ -51,7 +51,11 @@ pre, code {
 	width: 390px;
 	height: 75px;
 	margin: 0 auto;
+	padding-left: 50%;
+	padding-right: 10%;
+	padding-top: 0; 
 }
+/*
 
 .button {
 	display: block;
@@ -74,6 +78,40 @@ pre, code {
 .button:active {
 	background: #F6A953;
 }
+*/
+
+
+.button {
+	float: right;
+	border: 0px;
+	padding: 8px 10px;
+	margin: 5px 5px;
+	border-radius: 1px;
+	text-decoration: none;
+
+	cursor: pointer;
+	color: #fff;
+	background: #7aa76d;
+	font-size: 15px;
+	font-weight: 300;
+
+	-webkit-transition: 0.15s background ease;
+	   -moz-transition: 0.15s background ease;
+	    -ms-transition: 0.15s background ease;
+	     -o-transition: 0.15s background ease;
+	        transition: 0.15s background ease;
+}
+
+.button:hover {
+	background: #91cd85;
+}
+.button:active {
+	background: #60895a;
+}
+button+button {
+	margin-left: 5px;
+}
+
 
 /* Custom styles for popin & close button */
 .custom {
