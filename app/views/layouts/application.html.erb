@@ -1,0 +1,62 @@
+ 
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Ideally.io</title>
+		
+		<link href='http://fonts.googleapis.com/css?family=Monda:700' rel='stylesheet' type='text/css'>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		
+		<%= stylesheet_link_tag('style','avgrund') %>
+	</head>
+	
+	
+	<banner><!--upper bar-->
+		<div align="left">
+			<f1>Ideally.io</f1>
+		</div>
+	</banner>	
+
+	<body>
+			<div class="container">
+				<div class="buttons">
+					<a href="#" id="show" class="button left">Show it</a>
+					<a href="#" id="submitIdea" class="button left">Submit Idea</a>
+				</div>
+			</div>
+		
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+			<%= javascript_include_tag "jquery.avgrund.js" %>
+			
+			<script>
+			$(function() {
+				$('#show').avgrund({
+					height: 200,
+					holderClass: 'custom',
+					showClose: true,
+					showCloseText: 'Close',
+					enableStackAnimation: true,
+					onBlurContainer: '.container',
+					template: '<p>So implement your design and place content here! If you want to close modal, please hit "Esc", click somewhere on the screen or use special button.</p>'
+				});
+			});
+			$(function() {
+				$('#submitIdea').avgrund({
+					height: 200,
+					holderClass: 'custom',
+					showClose: true,
+					showCloseText: 'Close',
+					enableStackAnimation: true,
+					onBlurContainer: '.container',
+					template: '<p>So implement your design and asdfasdf to close modal, please hit "Esc", click somewhere on the screen or use special button.</p>'
+				});
+			});
+			</script>
+	
+			<%= yield %>
+			
+	</body>
+	
+</html>

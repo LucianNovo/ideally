@@ -1,0 +1,35 @@
+<% if !flash[:notice].blank? %>
+	<div class="notice">
+		<%= flash[:notice] %>
+	</div>
+<% end %>
+
+<%"Idea List" %>
+
+<div class="Idea List">
+  <h2>Subjects</h2>
+  
+  <%= link_to("Add a new idea", {:action => 'new'}, :class => 'action new') %>
+
+  <div><%= pluralize(@idea.size, 'idea') %> found</div>
+  
+  <table class="listing" summary="Subject list">
+    <tr class="header">
+      <th>&nbsp;</th>
+      <th>Visible</th>
+      <th>Actions</th>
+    </tr>
+    <% @idea.each do |idea| %>
+    <tr class="<%= cycle('odd', 'even') %>">
+      <td><%= idea.title %></td>
+      <td class="center"><%= idea.visible ? 'Yes' : 'No' %></td>
+      <td class="actions">
+        <%= link_to("Spect", {:action => 'show', :id => idea.id}, :class => 'action show') %>
+        <%= link_to("Edit", {:action => 'edit', :id => idea.id}, :class => 'edit') %>
+		<%= link_to("Upvote", vote_path(:idea_id => idea.id, :vote_type => 0, :direction => 1), :remote => true, :method => "put")%>
+		<%= link_to("Delete", {:action => 'delete', :id => idea.id}, :class => 'delete') %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>

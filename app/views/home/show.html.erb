@@ -1,0 +1,38 @@
+<% @page_title = "Show Page: #{@idea.title}" %>
+
+<%= link_to("<< Back to List", {:action => 'idea', :subject_id => @idea.id}, :class => 'back-link') %>
+
+<div class="Idea show">
+  <h2>Show Idea</h2>
+
+  <table summary="Idea detail view">
+    <tr>
+      <th>Subject ID</th>
+      <td><%= @idea.idea_id %></td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td><%= @idea.title %></td>
+    </tr>
+    <tr>
+      <th>Idea</th>
+      <td><%= @idea.idea %></td>
+    </tr>
+      <th>Idea</th>
+      <td><%= @idea.description %></td>
+    </tr>
+    <tr>
+      <th>Visible?</th>
+      <td><%= @idea.visible ? 'true' : 'false' %></td>
+    </tr>
+    <tr>
+      <th>Created</th>
+      <td><%= @idea.created_at %></td>
+    </tr>
+    <tr>
+      <th>Updated</th>
+      <td><%= @idea.updated_at %></td>
+    </tr>
+  </table>
+  
+</div>

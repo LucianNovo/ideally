@@ -1,0 +1,34 @@
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+
+  <%= stylesheet_link_tag('style','avgrund') %>
+
+	<div class="container">
+		<div class="buttons">
+			<a href="#" id="show" class="button left">login</a>
+		</div>
+	
+	<div id='createIdeaForm' hidden="true">
+		<%= form_for(:idea, :url => {:action => 'create'}) do |f| %>
+			  <%= f.text_field(:title) %>
+			  <%= f.text_field(:description) %>	
+			  <%= submit_tag("Submit")%>
+		<% end %>
+	</div>
+
+	<script>
+    <%= javascript_include_tag "jquery.avgrund.js" %>	
+	$(function() {
+		$('#show').avgrund({
+			height: 200,
+			holderClass: 'custom',
+			showClose: true,
+			showCloseText: 'Close',
+			enableStackAnimation: true,
+			onBlurContainer: '.container',
+			template: document.getElementById('createIdeaForm').innerHTML
+		});
+	});
+	</script>
+	
+</html>

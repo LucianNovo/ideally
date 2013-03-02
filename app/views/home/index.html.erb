@@ -1,0 +1,92 @@
+  	<div class="avgrund-cover"></div>
+<!-- 	Idea submission form  -->
+	<aside id="modalForm" class="avgrund-popup">
+			  <!--insert js here  -->
+	</aside>
+
+	<div class="container">
+		<div class="buttons">
+			<a href="#" id="show" class="button left">Show it</a>
+			<a href="#" id="people" class="button download left">Show itt</a>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	<script>
+	$(function() {
+		$('#show').avgrund({
+			height: 200,
+			holderClass: 'custom',
+			showClose: true,
+			showCloseText: 'Close',
+			enableStackAnimation: true,
+			onBlurContainer: '.container',
+			template: 
+			  <%= form_for(:idea, :url =>{:action => 'create'}) do |f| %>
+				  <table summary="creating an Idea">
+				  	<tr>
+				  		<th>Idea Title</th>
+				  		<td><%= f.text_field(:title) %></td>
+				  	</tr>
+				  	<tr>
+				  		<th>Idea description</th>
+				  		<td><%= f.text_field(:description) %></td>
+				  	</tr>
+				  </table>
+				  <%= submit_tag("Submit")%>
+			  <% end %>
+		});
+	});
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage('resize', "*");
+    }
+  </script>
+
+
+<!--
+	<div class="login">
+	  <%= form_tag(:action => 'attempt_login') do %>
+	  <table>
+	    <tr>
+	      <td><%= label_tag(:username) %></td>
+	      <td><%= text_field_tag(:username) %></td>
+	    </tr>
+	    <tr>
+	      <td><%= label_tag(:password) %></td>
+	      <td><%= password_field_tag(:password) %></td>
+	    </tr>
+	    <tr>
+	      <td>&nbsp;</td>
+	      <td><%= submit_tag("Log In") %></td>
+	    </tr>
+	  </table>
+	  <% end %>
+	</div>
+-->
+  
+  <section id="content">
+	  <section id="copy">
+	  </section>
+  
+	  <div id="superior" hieght='800'>
+	  </div>
+
+	  <script>
+	    $(function(){
+	      
+	      var $container = $('#container');
+	      
+	      $container.isotope({
+	        itemSelector: '.element'
+	      });
+	      
+	    });
+	  </script>  
+  </section>

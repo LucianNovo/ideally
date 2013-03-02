@@ -1,0 +1,19 @@
+<%= link_to("<< Back to List", {:action => 'idea'}, :class => 'back-link') %>
+
+<div class="Idea show">
+  <h2>Show Idea</h2>
+
+  <%= form_for(:idea, :url =>{:action => 'create'}) do |f| %>
+	  <table summary="creating an Idea">
+	  	<tr>
+	  		<th>Idea Title</th>
+	  		<td><%= f.text_field(:title) %></td>
+	  	</tr>
+	  	<tr>
+	  		<th>Idea description</th>
+	  		<td><%= f.text_field(:description) %></td>
+	  	</tr>
+	  </table>
+	  <%= submit_tag("Submit")%>
+  <% end %>
+</div>
