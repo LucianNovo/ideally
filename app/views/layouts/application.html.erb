@@ -24,7 +24,7 @@
 	</head>
 
 	<body>	
-		<div class="yield">
+		<div class="yield" align="center">
 			<%= yield %>
 		</div>
 	</body>
@@ -34,15 +34,13 @@
 			<%= form_for(:ideaCreation, :url => {:action => 'create'}) do |f| %>
 					  <%= f.text_field(:title) %>
 					  <%= f.text_field(:idea) %>
-					  <%= f.text_field(:description) %>	
-					  <%= f.text_field(:tags) %>	
+					  <%= f.text_field(:description) %>
+					  <%= f.text_field(:tags) %>
 				  <%= submit_tag("Submit")%>
 			<% end %>
 		</div>
+		
 		<div id='loginForm' hidden="true">
-			<%= form_for(:ideaCreation, :url => {:action => 'create'}) do |f| %>
-				  <%= submit_tag("Submit")%>
-			<% end %>
 		</div>
 	
 	

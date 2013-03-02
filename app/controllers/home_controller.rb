@@ -22,7 +22,7 @@ class HomeController < ApplicationController
 	end
 	
 	def create 
-		@idea = Idea.new(params[:idea])
+		@idea = Idea.new(params[:ideaCreation])
 		if @idea.save
 			flash[:notice] = "Idea Submitted."
 			redirect_to(:action => 'idea')

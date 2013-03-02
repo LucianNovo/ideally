@@ -105,7 +105,7 @@ pre, code {
 .button:hover {
 	background: #91cd85;
 }
-.button:active {
+.git button:active {
 	background: #60895a;
 }
 button+button {
