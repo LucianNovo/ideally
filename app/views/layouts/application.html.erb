@@ -18,45 +18,60 @@
 			<f1>Ideally.io</f1>
 		</div>
 	</banner>	
-
-	<body>
-			<div class="container">
-				<div class="buttons">
-					<a href="#" id="show" class="button left">Show it</a>
-					<a href="#" id="submitIdea" class="button left">Submit Idea</a>
-				</div>
+		<div class="container">
+			<div class="buttons">
+				<a href="#" id="show" class="button left">Show it</a>
+				<a href="#" id="submitIdea" class="button left">Submit Idea</a>
 			</div>
-		
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-			<%= javascript_include_tag "jquery.avgrund.js" %>
+		</div>
 			
-			<script>
-			$(function() {
-				$('#show').avgrund({
-					height: 200,
-					holderClass: 'custom',
-					showClose: true,
-					showCloseText: 'Close',
-					enableStackAnimation: true,
-					onBlurContainer: '.container',
-					template: '<p>So implement your design and place content here! If you want to close modal, please hit "Esc", click somewhere on the screen or use special button.</p>'
-				});
-			});
-			$(function() {
-				$('#submitIdea').avgrund({
-					height: 200,
-					holderClass: 'custom',
-					showClose: true,
-					showCloseText: 'Close',
-					enableStackAnimation: true,
-					onBlurContainer: '.container',
-					template: '<p>So implement your design and asdfasdf to close modal, please hit "Esc", click somewhere on the screen or use special button.</p>'
-				});
-			});
-			</script>
+		<div id='createIdeaForm' hidden="true">
+			<%= form_for(:ideaCreation, :url => {:action => 'create'}) do |f| %>
+					  <%= f.text_field(:title) %>
+					  <%= f.test_field(:idea) %>
+					  <%= f.text_field(:description) %>	
+					  <%= f.text_field(:tags) %>	
+				  <%= submit_tag("Submit")%>
+			<% end %>
+		</div>
 	
-			<%= yield %>
-			
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<%= javascript_include_tag "jquery.avgrund.js" %>
+		
+		
+		<script>
+		$(function() {
+			$('#show').avgrund({
+				height: 200,
+				holderClass: 'custom',
+				showClose: true,
+				showCloseText: 'Close',
+				enableStackAnimation: true,
+				onBlurContainer: '.container',
+				template: document.getElementById('createIdeaForm').innerHTML
+			});
+		});
+		$(function() {
+			$('#submitIdea').avgrund({
+				height: 200,
+				holderClass: 'custom',
+				showClose: true,
+				showCloseText: 'Close',
+				enableStackAnimation: true,
+				onBlurContainer: '.container',
+				template: document.getElementById('createIdeaForm').innerHTML
+			});
+		});
+		</script>
+
+		
+
+
+	<body>	
+	
+		<%= yield %>
+		
 	</body>
 	
 </html>

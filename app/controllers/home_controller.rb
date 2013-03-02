@@ -6,6 +6,7 @@ class HomeController < ApplicationController
 	
 	def idea
 		@idea = Idea.order("ideas.idea ASC")
+		@ideaCreation = Idea.new()
 	end
 	
 	def popular
