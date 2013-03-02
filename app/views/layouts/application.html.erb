@@ -10,27 +10,39 @@
 		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 		
 		<%= stylesheet_link_tag('style','avgrund') %>
-	</head>
 	
-	
-	<banner><!--upper bar-->
+	<div class="banner"><!--upper bar-->
 		<div align="left">
 			<f1>Ideally.io</f1>
 		</div>
-	</banner>	
+	
 		<div class="container">
 			<div class="buttons">
-				<a href="#" id="show" class="button left">Show it</a>
+				<a href="#" id="login" class="button left">Login</a>
 				<a href="#" id="submitIdea" class="button left">Submit Idea</a>
 			</div>
 		</div>
-			
+	</div>		
+	</head>
+
+	<body>	
+		<div class="yield">
+			<%= yield %>
+		</div>
+	</body>
+	
+	<div>
 		<div id='createIdeaForm' hidden="true">
 			<%= form_for(:ideaCreation, :url => {:action => 'create'}) do |f| %>
 					  <%= f.text_field(:title) %>
-					  <%= f.test_field(:idea) %>
+					  <%= f.text_field(:idea) %>
 					  <%= f.text_field(:description) %>	
 					  <%= f.text_field(:tags) %>	
+				  <%= submit_tag("Submit")%>
+			<% end %>
+		</div>
+		<div id='loginForm' hidden="true">
+			<%= form_for(:ideaCreation, :url => {:action => 'create'}) do |f| %>
 				  <%= submit_tag("Submit")%>
 			<% end %>
 		</div>
@@ -42,14 +54,14 @@
 		
 		<script>
 		$(function() {
-			$('#show').avgrund({
+			$('#login').avgrund({
 				height: 200,
 				holderClass: 'custom',
 				showClose: true,
 				showCloseText: 'Close',
 				enableStackAnimation: true,
 				onBlurContainer: '.container',
-				template: document.getElementById('createIdeaForm').innerHTML
+				template: document.getElementById('loginForm').innerHTML
 			});
 		});
 		$(function() {
@@ -64,14 +76,5 @@
 			});
 		});
 		</script>
-
-		
-
-
-	<body>	
-	
-		<%= yield %>
-		
-	</body>
-	
+	</div>
 </html>
