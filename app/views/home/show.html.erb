@@ -1,38 +1,43 @@
 <% @page_title = "Show Page: #{@idea.title}" %>
+<%= stylesheet_link_tag('style','bootstrap.css') %>
+<%= stylesheet_link_tag('style','bootstrap-responsive.css') %>
 
-<%= link_to("<< Back to List", {:action => 'idea', :subject_id => @idea.id}, :class => 'back-link') %>
 
-<div class="Idea show">
-  <h2>Show Idea</h2>
-
-  <table summary="Idea detail view">
-    <tr>
-      <th>Subject ID</th>
-      <td><%= @idea.idea_id %></td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td><%= @idea.title %></td>
-    </tr>
-    <tr>
-      <th>Idea</th>
-      <td><%= @idea.idea %></td>
-    </tr>
-      <th>Idea</th>
-      <td><%= @idea.description %></td>
-    </tr>
-    <tr>
-      <th>Visible?</th>
-      <td><%= @idea.visible ? 'true' : 'false' %></td>
-    </tr>
-    <tr>
-      <th>Created</th>
-      <td><%= @idea.created_at %></td>
-    </tr>
-    <tr>
-      <th>Updated</th>
-      <td><%= @idea.updated_at %></td>
-    </tr>
-  </table>
-  
-</div>
+	<div class="page-header" style="padding-left:10%;">
+	  <h1> 
+		  <%= link_to("<<", {:action => 'idea', :subject_id => @idea.id}, :class => 'back-link') %> 
+		  <%= @idea.title %><small></small>
+		  <%= link_to(">>", {:action => 'idea', :subject_id => @idea.id}, :class => 'back-link') %>
+		  <%= link_to("(List)", {:action => 'idea', :subject_id => @idea.id}, :class => 'back-link') %>
+	  </h1>
+	</div>
+ 
+ 
+	<div class="fluid-container" id="page">
+		<div class="row-fluid">
+			<div class="divider"> <!-- activates the divider styling -->
+		        <div class="span6 offset1" style="text-align:left;"> <!-- Idea description chunk -->
+		        	<h2><%= @idea.idea %></h2>
+		        		<div class="span9 offset2">
+	        				<%= @idea.description %>
+		        		</div>
+		        </div> <!-- Idea description chunk -->
+		        <div class="span4" style="padding-left:80px;" style="text-align:left;">
+		        	<h2 style="text-align:left;">Tags</h2>
+		        	<p  style="text-align:left;"><%= @idea.tags %></p>
+			        <div class="span8"> <!-- Contributors -->
+			        	<h2 style="text-align:left;">Whatever Title</h2>
+			        	<p style="text-align:left;">Here is the span9 within the first section. Here is the span9 within the first sectio. Here is the span9 within the first section</p>
+			        </div> <!-- Contributors -->
+		        </div>
+			</div> <!-- divider -->
+	    </div> <!-- fluid-row -->
+   </div>
+   
+	<div class="footer" style="float:center;"> <!-- breadcrumbs --> <!-- padding: 0; margin:0;width 100%; position: absolute; bottom: 0px; -->
+		<ul class="breadcrumb" style="text-align:center;">
+		  <li class="active">Stealth Mode? <%= @idea.visible ? 'true' : 'false' %> <span class="divider">/</span></li>
+		  <li class="active">Created: <%= @idea.created_at %> <span class="divider">/</span></li>
+		  <li class="active">Updated: <%= @idea.updated_at %> </li>
+		</ul>
+	</div><!-- breadcrumbs -->

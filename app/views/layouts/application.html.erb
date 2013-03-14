@@ -42,8 +42,10 @@
 							  <label for="description">Description</label>
 							  <%= f.text_field(:description) %>
 							  <label for="tags">Tags</label>
-							  <%= f.text_field(:tags) %>
-						  <%= submit_tag("Submit", :class => 'button')%>
+							  <%= f.text_field(:tags) %>	  
+						<div align="center">
+						  <%= submit_tag("Submit",:class => "button small")%>
+						</div>
 					<% end %>
 				</fieldset>
 			</div>
