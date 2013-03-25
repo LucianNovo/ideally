@@ -1,3 +1,4 @@
+
 body {
 	background: #FFF;
 	color: #666;
@@ -25,20 +26,8 @@ h1 {
 	color: #333;
 	font-family: 'Headland One', Georgia, serif;
 	font-size: 40px;
-	text-align: center;
+	text-align: left;
 	margin: 0 0 25px;
-}
-
-pre, code {
-	font-family: "Consolas", "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-	font-size: 12px;
-	line-height: 18px;
-	border: 1px solid #CCC;
-	padding: 10px;
-	margin: 10px 0;
-	overflow: hidden;
-	background: #F8F8F8;
-	color: #333;
 }
 
 .container {
@@ -55,30 +44,6 @@ pre, code {
 	padding-right: 10%;
 	padding-top: 0; 
 }
-/*
-
-.button {
-	display: block;
-	background: #ED5E2F;
-	color: #FFF;
-	text-decoration: none;
-	width: 110px;
-	text-align: center;
-	padding: 10px;
-	margin: 15px 0 0 15px;
-	font-size: 18px;
-	text-transform: uppercase;
-	font-weight: 300;
-}
-
-.button:hover {
-	background: #74A599;
-}
-
-.button:active {
-	background: #F6A953;
-}
-*/
 
 
 .button {
@@ -102,18 +67,25 @@ pre, code {
 	        transition: 0.15s background ease;
 }
 
+.button.small{
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 10px;
+	width: 80;
+}
+
+
 .button:hover {
 	background: #91cd85;
 }
-.git button:active {
-	background: #60895a;
-}
+
 button+button {
 	margin-left: 5px;
 }
 
 
 /* Custom styles for popin & close button */
+
 .custom {
 	color: #555;
 	-webkit-border-radius: 3px;
@@ -124,9 +96,9 @@ button+button {
 .custom p {
 	padding: 10px 20px;
 	margin: 30px 0 0;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 300;
-	text-align: justify;
+	text-align: center;
 }
 
 .banner {
@@ -155,11 +127,13 @@ f1{
 .yield{
 	padding-top: 120;
 }
+
 label, input { 
 	vertical-align: middle;
 	display:block;
-	width:95%; 
+	width: 90%; 
 	padding: .4em; 
+	margin-left: 1em;
 }
 
 input.text { 
@@ -185,10 +159,23 @@ div#users-contain table {
 	width: 100%; 
 }
 
-div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
-.ui-dialog .ui-state-error { padding: .3em; }
-.validateTips { border: 1px solid transparent; padding: 0.3em; }
+div#users-contain table td, div#users-contain table th { 
+	border: 1px solid #eee; 
+	padding: .6em 10px; 
+	text-align: left; 
+}
 
+.ui-dialog .ui-state-error { 
+	padding: .3em; 
+}
 
+.validateTips { 
+	text-align: center;
+	border: 1px solid transparent; 
+	padding: 0.3em; 
+	font-size:large;
+}
 
-
+.footer{
+	padding-top: 20%;
+}
