@@ -61,5 +61,10 @@ module Ideally
     
     config.assets.precompile += ['style.css']
     config.assets.precompile += ['avgrund.css']
+    config.assets.precompile += ['jquery.avgrund.js']
+    config.assets.precompile += ['bootstrap.js']
+    config.assets.precompile += ['idea.css']
+    config.assets.precompile += ['bootstrap.min.js']
+    config.assets.precompile += ['jquery.avgrund.js']
   end
 end
