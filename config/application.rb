@@ -67,6 +67,7 @@ module Ideally
     config.assets.precompile += ['bootstrap.js']
     config.assets.precompile += ['bootstrap.min.js']
     config.assets.precompile += ['bootstrap.css']
+    config.assets.precompile += ['bootstrap-responsive.css']
     #precompile js 
     config.assets.precompile += ['jquery.avgrund.js']
     config.assets.precompile += ['jquery.avgrund.js']
