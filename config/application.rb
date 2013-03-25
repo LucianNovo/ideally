@@ -59,12 +59,16 @@ module Ideally
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
     
+    #precompile styles
     config.assets.precompile += ['style.css']
     config.assets.precompile += ['avgrund.css']
-    config.assets.precompile += ['jquery.avgrund.js']
-    config.assets.precompile += ['bootstrap.js']
     config.assets.precompile += ['idea.css']
+    #precompile bootstrap
+    config.assets.precompile += ['bootstrap.js']
     config.assets.precompile += ['bootstrap.min.js']
+    config.assets.precompile += ['bootstrap.css']
+    #precompile js 
+    config.assets.precompile += ['jquery.avgrund.js']
     config.assets.precompile += ['jquery.avgrund.js']
   end
 end
