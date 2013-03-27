@@ -40912,3 +40912,64 @@ Served asset /style.css - 304 Not Modified (3ms)
 
 Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at Sun Mar 24 20:49:55 -0700 2013
 Served asset /jquery.avgrund.js - 304 Not Modified (3ms)
+
+
+Started GET "/home/idea" for 127.0.0.1 at Mon Mar 25 00:08:14 -0700 2013
+Connecting to database specified by database.yml
+Processing by HomeController#idea as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `ideas` [0m
+  [1m[35mIdea Load (0.5ms)[0m  SELECT `ideas`.* FROM `ideas` ORDER BY ideas.idea ASC
+  Rendered home/idea.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 135ms (Views: 90.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at Mon Mar 25 00:08:15 -0700 2013
+Served asset /avgrund.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Mon Mar 25 00:08:15 -0700 2013
+Served asset /style.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at Mon Mar 25 00:08:15 -0700 2013
+Served asset /jquery.avgrund.js - 304 Not Modified (3ms)
+
+
+Started GET "/home/idea" for 127.0.0.1 at Mon Mar 25 00:08:48 -0700 2013
+Processing by HomeController#idea as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `ideas` [0m
+  [1m[35mIdea Load (0.4ms)[0m  SELECT `ideas`.* FROM `ideas` ORDER BY ideas.idea ASC
+  Rendered home/idea.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Mon Mar 25 00:08:48 -0700 2013
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at Mon Mar 25 00:08:48 -0700 2013
+Served asset /jquery.avgrund.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at Mon Mar 25 00:08:48 -0700 2013
+Served asset /avgrund.css - 304 Not Modified (0ms)
+
+
+Started GET "/home/idea" for 127.0.0.1 at Mon Mar 25 00:21:29 -0700 2013
+Processing by HomeController#idea as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `ideas` [0m
+  [1m[35mIdea Load (0.3ms)[0m  SELECT `ideas`.* FROM `ideas` ORDER BY ideas.idea ASC
+  Rendered home/idea.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 112ms (Views: 25.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Mon Mar 25 00:21:30 -0700 2013
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at Mon Mar 25 00:21:30 -0700 2013
+Served asset /jquery.avgrund.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at Mon Mar 25 00:21:30 -0700 2013
+Served asset /avgrund.css - 304 Not Modified (3ms)
