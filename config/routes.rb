@@ -1,8 +1,10 @@
 Ideally::Application.routes.draw do
 	
+  devise_for :users
+
   root :to => "home#index"
    
-#   match 'vote/:id' =>  'vote#upvote'
+  #   match 'vote/:id' =>  'vote#upvote'
   
   put "vote", :to => "vote#upvote", :as => :vote
   
