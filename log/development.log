@@ -40600,6 +40600,7 @@ Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at Wed Mar 13 01:40
 Served asset /jquery.avgrund.js - 304 Not Modified (0ms)
 
 
+<<<<<<< HEAD
 Started GET "/home/idea" for 127.0.0.1 at Sun Mar 24 12:13:59 -0700 2013
 Connecting to database specified by database.yml
 
@@ -41101,3 +41102,52 @@ Served asset /avgrund.css - 304 Not Modified (0ms)
 
 Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-03-30 12:43:02 -0700
 Served asset /style.css - 304 Not Modified (0ms)
+=======
+Started GET "/home/show/7" for 127.0.0.1 at Wed Mar 13 02:31:55 -0700 2013
+Processing by HomeController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT `ideas`.* FROM `ideas` WHERE `ideas`.`id` = 7 LIMIT 1[0m
+  Rendered home/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at Wed Mar 13 02:31:55 -0700 2013
+Served asset /avgrund.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Wed Mar 13 02:31:55 -0700 2013
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at Wed Mar 13 02:31:55 -0700 2013
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at Wed Mar 13 02:31:55 -0700 2013
+Served asset /jquery.avgrund.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at Wed Mar 13 02:31:55 -0700 2013
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/home/idea" for 127.0.0.1 at Wed Mar 13 21:51:38 -0700 2013
+Connecting to database specified by database.yml
+Processing by HomeController#idea as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `ideas` [0m
+  [1m[35mIdea Load (25.2ms)[0m  SELECT `ideas`.* FROM `ideas` ORDER BY ideas.idea ASC
+  Rendered home/idea.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 564ms (Views: 268.5ms | ActiveRecord: 229.7ms)
+
+
+Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at Wed Mar 13 21:51:40 -0700 2013
+Served asset /avgrund.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at Wed Mar 13 21:51:40 -0700 2013
+Served asset /jquery.avgrund.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Wed Mar 13 21:51:40 -0700 2013
+Served asset /style.css - 304 Not Modified (4ms)
+>>>>>>> 8464a6fe4d2236b8298dc492a11ae9f78b0d86b9
