@@ -1,7 +1,8 @@
 class HomeController < ApplicationController
 
 	def index
-		render("index")
+		@idea = Idea.order("ideas.idea ASC")
+		@ideaCreation = Idea.new()
 	end
 	
 	def idea

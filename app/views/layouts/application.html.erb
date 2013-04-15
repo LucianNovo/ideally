@@ -17,7 +17,15 @@
 		</div>
 
 		<div class="buttons" align="right">
-			<a href="#" id="login" class="button">Login</a>
+			<% unless user_signed_in? -%>
+				<a href="#" id="login" class="button">Login</a>
+		        <%= link_to "Sign up", new_user_registration_path %>
+			<% end -%> 
+			<% if user_signed_in? -%>
+				<%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+			<% else -%>
+				<a href="#" id="login" class="button">Jamaica!</a>
+			<% end -%>
 			<a href="#" id="submitIdea" class="button ">Submit Idea</a>
 		</div>
 	</div>		

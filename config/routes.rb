@@ -1,14 +1,13 @@
 Ideally::Application.routes.draw do
-	
-  devise_for :users
+  devise_for :idea, path_names: {sign_in: "login", sign_out: "logout"}
 
-  root :to => "home#index"
-   
-  #   match 'vote/:id' =>  'vote#upvote'
-  
-  put "vote", :to => "vote#upvote", :as => :vote
-  
-  
+  resources :idea
+
+  root :to => "home#idea"
+  match "home", :to => "home#idea" 
+#   put "vote", :to => "vote#upvote", :as => :vote
+#   
+#   
 #   put '/home/vote/upvote/:id' => 'vote#upvote', :as => 'upvote'
 #   
 #   put "vote", :to => "vote#vote", as: :vote

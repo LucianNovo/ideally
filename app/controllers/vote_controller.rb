@@ -1,4 +1,6 @@
 class VoteController < ApplicationController
+  before_filter :authenticate_user!
+
 
   def vote
     user_id = current_user.id
