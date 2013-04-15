@@ -45349,3 +45349,31 @@ Migrating to CreateIdeas (20130225063513)
 Migrating to DeviseCreateUsers (20130329193616)
 Migrating to DeviseCreateInstalls (20130330010422)
   [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-04-15 02:56:15 -0700
+Served asset /rails.png - 200 OK (74ms)
+
+
+Started GET "/home/idea" for 127.0.0.1 at 2013-04-15 02:56:16 -0700
+Processing by HomeController#idea as HTML
+  [1m[36m (163.3ms)[0m  [1mSELECT COUNT(*) FROM `ideas` [0m
+  [1m[35mIdea Load (53.0ms)[0m  SELECT `ideas`.* FROM `ideas` ORDER BY ideas.idea ASC
+  Rendered home/idea.html.erb within layouts/application (239.4ms)
+Completed 500 Internal Server Error in 1673ms
+
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x007fd0fcee3c00>:0x007fd0fcee2918>):
+    17: 		</div>
+    18: 
+    19: 		<div class="buttons" align="right">
+    20: 			<% unless user_signed_in? -%>
+    21: 				<a href="#" id="login" class="button">Login</a>
+    22: 		        <%= link_to "Sign up", new_user_registration_path %>
+    23: 			<% end -%> 
+  app/views/layouts/application.html.erb:20:in `_app_views_layouts_application_html_erb__2997586013828092077_70267804651480'
+
+
+  Rendered /Users/lucstencildude/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (39.3ms)
+  Rendered /Users/lucstencildude/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/lucstencildude/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (53.2ms)
