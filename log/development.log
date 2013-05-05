@@ -50753,3 +50753,4 @@ Served asset /jquery.avgrund.js - 304 Not Modified (0ms)
 
 Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at 2013-05-05 11:01:58 -0700
 Served asset /avgrund.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
