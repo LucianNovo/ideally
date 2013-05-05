@@ -9,6 +9,7 @@ class CreateIdeas < ActiveRecord::Migration
     	t.string "title", :limit => 144
     	t.text "description", :limit => 800
     	t.integer "ticket"
+    	t.integer "timeAlloted"
     	t.string "tags", :limit => 50
     	t.integer "upvote", :defualt => 0
       t.timestamps

@@ -17,7 +17,7 @@
 		</div>
 
 		<div class="buttons" align="right">
-			<% unless user_signed_in? -%>
+		<% if user_signed_in? -%>
 				<a href="#" id="login" class="button">Login</a>
 		        <%= link_to "Sign up", new_user_registration_path %>
 			<% end -%> 
@@ -92,4 +92,4 @@
 		});
 		</script>
 	</div>
-</html>
+<html>

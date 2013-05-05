@@ -18,9 +18,7 @@ class HomeController < ApplicationController
 		@idea = Idea.find(params[:id])
 	end
 	
-	def new 
-		@idea = Idea.new(:title => 'A short pitch for the idea')
-	end
+	
 	
 	def create 
 		@idea = Idea.new(params[:ideaCreation])
