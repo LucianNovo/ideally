@@ -9,7 +9,7 @@
 <div class="Idea List">
   <h2>Subjects</h2>
   
-  <%= link_to("Add a new idea", {:action => 'new'}, :class => 'action new') %>
+<!--   <%= link_to("Add a new idea", {:action => 'new'}, :class => 'action new') %> -->
 
   <div><%= pluralize(@idea.size, 'idea') %> found</div>
   
@@ -24,8 +24,8 @@
       <td><%= idea.title %></td>
       <td class="center"><%= idea.visible ? 'Yes' : 'No' %></td>
       <td class="actions">
-        <%= link_to("Spect", {:action => 'show', :id => idea.id}, :class => 'action show') %>
-        <%= link_to("Edit", {:action => 'edit', :id => idea.id}, :class => 'edit') %>
+        <%= link_to("Spect", {:controller => 'idea', :action => 'show', :id => idea.id}, :class => 'action show') %>
+        <%= link_to("Edit", {:controller => 'idea', :action => 'edit', :id => idea.id}, :class => 'edit') %>
       </td>
     </tr>
     <% end %>

@@ -14,10 +14,6 @@ class HomeController < ApplicationController
 		render("popular")
 	end
 	
-	def show
-		@idea = Idea.find(params[:id])
-	end
-	
 	def create 
 		@idea = Idea.new(params[:ideaCreation])
 		if @idea.save
