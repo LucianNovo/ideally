@@ -59,7 +59,7 @@ Ideally::Application.configure do
     :enable_starttls_auto => true,
     :domain => 'gmail.com', #smtp.mandrillapp.com'SENDGRID_DOMAIN'
     :user_name =>  'lucian.novo@gmail.com',
-    :password => 'athbmxzlwgegjnvi',
+    :password => 'athbmxzlwgegjnvigit',
     :authentication => 'plain'
   }
 
