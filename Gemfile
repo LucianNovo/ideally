@@ -15,8 +15,6 @@ group :production do
 	gem 'pg'
 end
 
-gem 'mysql2'
-
 gem 'json'
 
 # Gems used only for assets and not required

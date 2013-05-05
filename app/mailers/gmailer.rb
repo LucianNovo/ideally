@@ -3,12 +3,7 @@ class Gmailer < ActionMailer::Base
   def signup_notification(user)
   	mail(
   		to: user.email,
-  		subject: "Welcome to My Awesome Site",
-  		# recipients: "<#{user.email}>",
-    	# from:       "My Forum ",
-    	# subject:    "Please activate your new account",
-    	# sent_on:    Time.now,
-    	# body:       "Don't care."
+  		subject: "Welcome to My Awesome Site"
   		)
   end
 end
