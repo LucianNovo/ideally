@@ -24,11 +24,11 @@
 		<% end -%> 
 
 		<% if user_signed_in? -%>
+
 			<%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
 		<% else -%>
 			<a href="#" id="login" class="button">Jamaica!</a>
 		<% end -%>
-		
 		<a href="#" id="submitIdea" class="button ">Submit Idea</a>
 		</div>
 	</div>		

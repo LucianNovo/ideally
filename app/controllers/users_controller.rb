@@ -11,14 +11,23 @@ class UsersController < ApplicationController
 
 	# app/models/user.rb
 
-	    def self.find_first_by_auth_conditions(warden_conditions)
-	      conditions = warden_conditions.dup
-	      if login = conditions.delete(:login)
-	        where(conditions).where(["lower(username) = :value OR lower(email) = :value", { :value => login.downcase }]).first
-	      else
-	        where(conditions).first
-	      end
-	    end
+    def self.find_first_by_auth_conditions(warden_conditions)
+      conditions = warden_conditions.dup
+      if login = conditions.delete(:login)
+        where(conditions).where(["lower(username) = :value OR lower(email) = :value", { :value => login.downcase }]).first
+      else
+        where(conditions).first
+      end
+    end
+
+	def create
+	  @user = User.new(params[:user])
+	  if @user.save
+	    redirect_to @user, notice: "Signed up successfully."
+	  else
+	    render :new
+	  end
+	end
 
 	### This is the correct method you override with the code above
 	### def self.find_for_database_authentication(warden_conditions)
