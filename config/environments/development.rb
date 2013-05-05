@@ -41,18 +41,27 @@ Ideally::Application.configure do
   # config.action_mailer.smtp_settings = {:address => "localhost", :port => 1025}
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-  config.action_mailer.default_charset = "utf-8"
+  # config.action_mailer.default_url_options = { :host => 'ideally.herokuapp.com/' }
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.perform_deliveries = true
+  # config.action_mailer.perform_deliveries = true
+  # config.action_mailer.smtp_settings = {
+  #   :address => 'smtp.mandrillapp.com',
+  #   :port => 587,
+  #   :enable_starttls_auto => true,
+  #   :domain => 'ideally.io', #smtp.mandrillapp.com'SENDGRID_DOMAIN'
+  #   :user_name =>  'lucstencildude@yahoo.com',
+  #   :password => 'oRCJblw_lJ6awWe0LZTHTA',
+  #   :authentication => 'login'
+  # }
   config.action_mailer.smtp_settings = {
-    :address => 'smtp.mandrillapp.com',
+    :address => 'smtp.gmail.com',
     :port => 587,
-    :domain => ENV['ideally.io'], #smtp.mandrillapp.com'SENDGRID_DOMAIN'
-    :user_name =>  ENV['lucstencildude@yahoo.com'],
-    :password => ENV['Aa1234567!@#'],
-    :authentication => 'plain',
-    :enable_starttls_auto => true
+    :enable_starttls_auto => true,
+    :domain => 'gmail.com', #smtp.mandrillapp.com'SENDGRID_DOMAIN'
+    :user_name =>  'lucian.novo@gmail.com',
+    :password => 'athbmxzlwgegjnvi',
+    :authentication => 'plain'
   }
+
 
 end

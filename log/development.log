@@ -50080,3 +50080,466 @@ Served asset /jquery.avgrund.js - 304 Not Modified (0ms)
 
 Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-05-05 04:58:34 -0700
 Served asset /style.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateIdeas (20130225063513)
+Migrating to DeviseCreateUsers (20130329193616)
+Migrating to DeviseCreateInstalls (20130330010422)
+  [1m[35m (0.5ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+
+Sent mail to lucian.novo@gmail.com (15ms)
+
+
+Sent mail to lucian.novo@gmail.com (4ms)
+
+
+Sent mail to lucian.novo@gmail.com (4ms)
+
+Connecting to database specified by database.yml
+
+Sent mail to lucian.novo@gmail.com (11ms)
+
+
+Sent mail to lucian.novo@gmail.com (5ms)
+
+
+Sent mail to lucian.novo@gmail.com (4ms)
+
+  Rendered gmailer/signup_notification.html.erb (1.3ms)
+
+Sent mail to lucian.novo@gmail.com (4ms)
+Date: Sun, 05 May 2013 06:20:09 -0700
+To: lucian.novo@gmail.com
+Message-ID: <51865c899e04e_12d63fd251c60670729cc@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.1ms)
+
+Sent mail to lucian.novo@gmail.com (715ms)
+Date: Sun, 05 May 2013 06:21:31 -0700
+From: this@you.com
+To: lucian.novo@gmail.com
+Message-ID: <51865cdb591c4_12d63fd251c6067073068@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (323ms)
+Date: Sun, 05 May 2013 06:24:54 -0700
+From: this@you.com
+To: lucian.novo@gmail.com
+Message-ID: <51865da6ccd21_12d63fd251c606707315e@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (359ms)
+Date: Sun, 05 May 2013 06:25:03 -0700
+From: this@you.com
+To: lucian.novo@gmail.com
+Message-ID: <51865daf4dfa4_12d63fd251c606707324d@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (337ms)
+Date: Sun, 05 May 2013 06:26:01 -0700
+From: this@you.com
+To: lucian.novo@gmail.com
+Message-ID: <51865de9af482_12d63fd251c6067073339@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (335ms)
+Date: Sun, 05 May 2013 06:27:19 -0700
+From: this@you.com
+To: lucian.novo@gmail.com
+Message-ID: <51865e378bac2_12d63fd251c6067073461@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (391ms)
+Date: Sun, 05 May 2013 06:27:38 -0700
+From: this@you.com
+To: lucian.novo@gmail.com
+Message-ID: <51865e4a3a8bb_12d63fd251c60670735c5@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (322ms)
+Date: Sun, 05 May 2013 06:28:10 -0700
+From: this@you.com
+To: lucian.novo@gmail.com
+Message-ID: <51865e6a9f0fd_12d63fd251c606707365f@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (911ms)
+Date: Sun, 05 May 2013 06:31:32 -0700
+From: this@you.com
+To: lucian.novo@gmail.com
+Message-ID: <51865f3417636_12d63fd251c606707373c@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (1349ms)
+Date: Sun, 05 May 2013 06:33:00 -0700
+From: this@you.com
+To: lucian.novo@gmail.com
+Message-ID: <51865f8cb89f6_12d63fd251c60670738ba@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (347ms)
+Date: Sun, 05 May 2013 06:39:00 -0700
+From: this@you.com
+To: lucian.novo@gmail.com
+Message-ID: <518660f44408b_12d63fd251c60670739cb@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (486ms)
+Date: Sun, 05 May 2013 06:39:56 -0700
+From: lnovosel@tedxucdavis.com
+To: lucian.novo@gmail.com
+Message-ID: <5186612c942ff_12d63fd251c60670740df@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (387ms)
+Date: Sun, 05 May 2013 06:42:49 -0700
+From: lnovosel@tedxucdavis.com
+To: lucian.novo@gmail.com
+Message-ID: <518661d96d65_12d63fd251c60670741a6@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (345ms)
+Date: Sun, 05 May 2013 06:45:38 -0700
+From: lnovosel@tedxucdavis.com
+To: lucian.novo@gmail.com
+Message-ID: <5186628281b03_12d63fd251c60670742f9@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (356ms)
+Date: Sun, 05 May 2013 06:45:59 -0700
+From: lnovosel@tedxucdavis.com
+To: lucian.novo@gmail.com
+Message-ID: <51866297ac2e2_12d63fd251c6067074350@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (336ms)
+Date: Sun, 05 May 2013 06:46:31 -0700
+From: lucian.novo@gmail.com
+To: lucian.novo@gmail.com
+Message-ID: <518662b790a2b_12d63fd251c60670744d7@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to lucian.novo@gmail.com (692ms)
+Date: Sun, 05 May 2013 06:48:20 -0700
+From: lucian.novo@gmail.com
+To: lucian.novo@gmail.com
+Message-ID: <51866324bf417_12d63fd251c606707454@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+Connecting to database specified by database.yml
+  Rendered gmailer/signup_notification.html.erb (1.2ms)
+
+Sent mail to l@me.com (779ms)
+Date: Sun, 05 May 2013 06:55:59 -0700
+From: lucian.novo@gmail.com
+To: l@me.com
+Message-ID: <518664ef8f33c_14853fe00546067087ae@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.1ms)
+
+Sent mail to l@me.com (383ms)
+Date: Sun, 05 May 2013 07:02:01 -0700
+From: lucian.novo@gmail.com
+To: l@me.com
+Message-ID: <51866659e6dc9_14853fe0054606708859@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to l@me.com (717ms)
+Date: Sun, 05 May 2013 07:08:24 -0700
+From: lucian.novo@gmail.com
+To: l@me.com
+Message-ID: <518667d8de9f3_14853fe00546067089f8@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to l@me.com (335ms)
+Date: Sun, 05 May 2013 07:11:07 -0700
+From: lucian.novo@gmail.com
+To: l@me.com
+Message-ID: <5186687bd9a49_14853fe00546067090a@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to l@me.com (339ms)
+Date: Sun, 05 May 2013 07:12:12 -0700
+From: lucian.novo@gmail.com
+To: l@me.com
+Message-ID: <518668bcd9385_14853fe00546067091d@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
+  Rendered gmailer/signup_notification.html.erb (0.0ms)
+
+Sent mail to l@me.com (338ms)
+Date: Sun, 05 May 2013 07:14:07 -0700
+From: lucian.novo@gmail.com
+To: l@me.com
+Message-ID: <5186692fc6f7c_14853fe0054606709268@Lucian-Novosels-MacBook-Pro.local.mail>
+Subject: Welcome to My Awesome Site
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+
+
+Rable 
+
+</html>
