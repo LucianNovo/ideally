@@ -18,8 +18,6 @@ class HomeController < ApplicationController
 		@idea = Idea.find(params[:id])
 	end
 	
-	
-	
 	def create 
 		@idea = Idea.new(params[:ideaCreation])
 		if @idea.save

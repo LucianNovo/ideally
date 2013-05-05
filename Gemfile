@@ -6,14 +6,11 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'devise'
+gem 'mysql2'
 
-group :development do
-	gem 'mysql2'
-end
-
-group :production do
-	gem 'pg'
-end
+# group :production do
+# 	gem 'pg'
+# end
 
 gem 'json'
 
