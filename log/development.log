@@ -50678,3 +50678,78 @@ Migrating to CreateIdeas (20130225063513)
 Migrating to DeviseCreateUsers (20130329193616)
 Migrating to DeviseCreateInstalls (20130330010422)
   [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-05 11:00:24 -0700
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-05 11:00:26 -0700
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-05-05 11:00:30 -0700
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2013-05-05 11:00:35 -0700
+Processing by HomeController#idea as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `ideas` [0m
+  [1m[35mIdea Load (0.5ms)[0m  SELECT `ideas`.* FROM `ideas` ORDER BY ideas.idea ASC
+  Rendered home/idea.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 108ms (Views: 70.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at 2013-05-05 11:00:35 -0700
+Served asset /avgrund.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at 2013-05-05 11:00:35 -0700
+Served asset /jquery.avgrund.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-05-05 11:00:35 -0700
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-05-05 11:00:44 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (2.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 86ms (Views: 25.0ms | ActiveRecord: 34.3ms)
+
+
+Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at 2013-05-05 11:00:44 -0700
+Served asset /avgrund.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at 2013-05-05 11:00:44 -0700
+Served asset /jquery.avgrund.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-05-05 11:00:44 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-05-05 11:01:57 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lqjWu/W04BHNYYvxFcTR8UaQ7UUneyoiYFy9iCwXS3M=", "user"=>{"email"=>"qpvvtqac@sharklasers.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'qpvvtqac@sharklasers.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 511ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-05-05 11:01:58 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at 2013-05-05 11:01:58 -0700
+Served asset /jquery.avgrund.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at 2013-05-05 11:01:58 -0700
+Served asset /avgrund.css - 304 Not Modified (0ms)
