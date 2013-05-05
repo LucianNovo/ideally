@@ -26,8 +26,6 @@
       <td class="actions">
         <%= link_to("Spect", {:action => 'show', :id => idea.id}, :class => 'action show') %>
         <%= link_to("Edit", {:action => 'edit', :id => idea.id}, :class => 'edit') %>
-		<%= link_to("Upvote", vote_path(:idea_id => idea.id, :vote_type => 0, :direction => 1), :remote => true, :method => "put")%>
-		<%= link_to("Delete", {:action => 'delete', :id => idea.id}, :class => 'delete') %>
       </td>
     </tr>
     <% end %>
