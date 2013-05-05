@@ -49990,3 +49990,93 @@ Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at 2013-05-05 04:18:04 -0
 Served asset /avgrund.css - 304 Not Modified (0ms)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateIdeas (20130225063513)
+Migrating to DeviseCreateUsers (20130329193616)
+Migrating to DeviseCreateInstalls (20130330010422)
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM schema_migrations[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to DeviseCreateInstalls (20130330010422)
+  [1m[36m (93.4ms)[0m  [1mDROP INDEX `index_installs_on_reset_password_token` ON `installs`[0m
+  [1m[35m (245.4ms)[0m  DROP INDEX `index_installs_on_email` ON `installs`
+  [1m[36m (25.9ms)[0m  [1mDROP TABLE `installs`[0m
+  [1m[35m (1.4ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20130330010422'
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM schema_migrations[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Migrating to DeviseCreateUsers (20130329193616)
+  [1m[36m (113.8ms)[0m  [1mDROP INDEX `index_users_on_reset_password_token` ON `users`[0m
+  [1m[35m (235.1ms)[0m  DROP INDEX `index_users_on_email` ON `users`
+  [1m[36m (4.0ms)[0m  [1mDROP TABLE `users`[0m
+  [1m[35m (22.5ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20130329193616'
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM schema_migrations[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateIdeas (20130225063513)
+Migrating to DeviseCreateUsers (20130329193616)
+  [1m[35m (111.4ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `confirmation_token` varchar(255), `confirmed_at` datetime, `confirmation_sent_at` datetime, `unconfirmed_email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (138.6ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)[0m
+  [1m[35m (92.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130329193616')[0m
+Migrating to DeviseCreateInstalls (20130330010422)
+  [1m[35m (131.2ms)[0m  CREATE TABLE `installs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (116.7ms)[0m  [1mCREATE UNIQUE INDEX `index_installs_on_email` ON `installs` (`email`)[0m
+  [1m[35m (105.0ms)[0m  CREATE UNIQUE INDEX `index_installs_on_reset_password_token` ON `installs` (`reset_password_token`)
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130330010422')[0m
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM schema_migrations[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/home/idea" for 127.0.0.1 at 2013-05-05 04:58:30 -0700
+Processing by HomeController#idea as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `ideas` [0m
+  [1m[35mIdea Load (0.4ms)[0m  SELECT `ideas`.* FROM `ideas` ORDER BY ideas.idea ASC
+  Rendered home/idea.html.erb within layouts/application (4.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 49ms (Views: 23.5ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at 2013-05-05 04:58:30 -0700
+Served asset /avgrund.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at 2013-05-05 04:58:30 -0700
+Served asset /jquery.avgrund.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-05-05 04:58:30 -0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-05-05 04:58:34 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 82ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/avgrund.css?body=1" for 127.0.0.1 at 2013-05-05 04:58:34 -0700
+Served asset /avgrund.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.avgrund.js?body=1" for 127.0.0.1 at 2013-05-05 04:58:34 -0700
+Served asset /jquery.avgrund.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-05-05 04:58:34 -0700
+Served asset /style.css - 304 Not Modified (0ms)
